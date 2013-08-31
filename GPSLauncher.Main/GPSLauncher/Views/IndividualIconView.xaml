@@ -42,7 +42,7 @@
             		<RowDefinition/>
             	</Grid.RowDefinitions>
             	<Image Source="{Binding ImageSource}"/>
-            	<TextBlock Grid.Row="1" TextWrapping="Wrap" Text="{Binding Caption}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            	<TextBlock Grid.Row="1" TextWrapping="Wrap" Text="{Binding Caption}" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Grid>
         </Button>
     </Grid>
