@@ -1,7 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using GPSLauncher.Annotations;
@@ -12,7 +15,7 @@ namespace GPSLauncher.ViewModels
     {
         public IndividualIconViewModel()
         {
-            
+            LaunchCommand = new RelayCommand(LaunchCommandExecute, CanExecuteLaunchCommand);
         }
         private string _image;
         private string _caption;
@@ -47,7 +50,6 @@ namespace GPSLauncher.ViewModels
                 OnPropertyChanged();
             }
         }
-
         public string Command
         {
             get
@@ -62,6 +64,22 @@ namespace GPSLauncher.ViewModels
                 OnPropertyChanged();
             }
         }
+        public ICommand LaunchCommand
+        {
+            get;
+            internal set;
+        }
+        private bool CanExecuteLaunchCommand(object obj)
+        {
+            return true;
+        }
+
+  
+        public void LaunchCommandExecute(object obj)
+        {
+            Process.Start(Command);
+        }
+    
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
