@@ -29,6 +29,8 @@
     		</Grid.ColumnDefinitions>
             <ContentControl Content="{Binding Item1x1}" Grid.Row="0" Grid.Column="0"></ContentControl>
             <ContentControl Content="{Binding Item1x2}" Grid.Row="0" Grid.Column="1"></ContentControl>
+            <ContentControl Content="{Binding Item1x3}" Grid.Row="0" Grid.Column="2"></ContentControl>
+            <ContentControl Content="{Binding Item1x4}" Grid.Row="0" Grid.Column="3"></ContentControl>
     	</Grid>
     </Border>
 </UserControl>
