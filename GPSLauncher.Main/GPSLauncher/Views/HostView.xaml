@@ -1,14 +1,13 @@
-﻿<Window xmlns:my="http://schemas.awesomium.com/winfx" 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
         xmlns:vm="clr-namespace:GPSLauncher.ViewModels"
         xmlns:v="clr-namespace:GPSLauncher.Views"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="GPSLauncher.MainLauncher"
-        Title="MainLauncher" Height="500" Width="400" ResizeMode="NoResize" Topmost="True" WindowStyle="None" BorderBrush="Black" BorderThickness="1">
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="GPSLauncher.HostView"
+        Title="App Launcher" Height="500" Width="400" ResizeMode="NoResize" Topmost="True" WindowStyle="None" BorderBrush="Black" BorderThickness="1">
     <Window.DataContext>
-        <vm:ScreenControllerViewModel />
+        <vm:HostViewModel />
     </Window.DataContext>
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="LostFocus">
@@ -41,9 +40,9 @@
                     <ColumnDefinition Width="6*"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Image Height="16" VerticalAlignment="Center" HorizontalAlignment="Center" Source="Icons/search.png" />
-                <Image VerticalAlignment="Center" HorizontalAlignment="Center" Height="16" Source="Icons/menu.png" Grid.Column="2"/>
-                <TextBox Grid.Column="1"  TextWrapping="Wrap" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" FontFamily="Segoe UI Light" VerticalAlignment="Center" FontWeight="Bold"  FontSize="18">
+                <Image Height="16" VerticalAlignment="Center" HorizontalAlignment="Center" Source="../Icons/search.png" />
+                <Image VerticalAlignment="Center" HorizontalAlignment="Center" Height="16" Source="../Icons/menu.png" Grid.Column="2"/>
+                <TextBox Grid.Column="1" TextWrapping="Wrap" Text="{Binding SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" FontFamily="Segoe UI Light" VerticalAlignment="Center" FontWeight="Bold"  FontSize="18">
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="LostFocus">
                             <i:InvokeCommandAction Command="{Binding SearchLostFocusCommand}" />
@@ -59,7 +58,7 @@
             </Grid>
         </Border>
 		<Grid Grid.Row="1">
-		    <ContentControl Content="{Binding}"></ContentControl>
+		    <ContentControl Content="{Binding StartScreen}"></ContentControl>
 		</Grid>
         
 	</Grid>

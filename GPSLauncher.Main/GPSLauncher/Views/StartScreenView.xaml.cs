@@ -1,11 +1,9 @@
-﻿using System.Windows.Controls;
-
-namespace GPSLauncher.Views
+﻿namespace GPSLauncher.Views
 {
     /// <summary>
     /// Interaction logic for MainView.xaml
     /// </summary>
-    public partial class StartScreenView : UserControl
+    public partial class StartScreenView
     {
         public StartScreenView()
         {

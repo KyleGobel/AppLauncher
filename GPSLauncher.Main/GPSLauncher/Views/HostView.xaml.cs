@@ -1,27 +1,18 @@
-﻿using System;
-using System.Diagnostics;
-using System.Windows;
-using System.Windows.Forms;
-using System.Windows.Input;
-using KeyEventArgs = System.Windows.Input.KeyEventArgs;
+﻿using System.Windows.Forms;
 
 namespace GPSLauncher
 {
     /// <summary>
     /// Interaction logic for MainLauncher.xaml
     /// </summary>
-    public partial class MainLauncher : Window
+    public partial class HostView
     {
-        public MainLauncher()
+        public HostView()
         {
             InitializeComponent();
             this.Top = System.Windows.SystemParameters.PrimaryScreenHeight - this.Height - GetTaskbarHeight();
             this.Left = System.Windows.Forms.Cursor.Position.X - (this.Width / 2);
         }
-
-   
-
-
 
         public static int GetTaskbarHeight()
         {

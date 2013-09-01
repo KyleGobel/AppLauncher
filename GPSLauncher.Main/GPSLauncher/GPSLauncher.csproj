@@ -66,11 +66,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="IIconShortcut.cs" />
-    <Compile Include="MainLauncher.xaml.cs">
-      <DependentUpon>MainLauncher.xaml</DependentUpon>
+    <Compile Include="Views\HostView.xaml.cs">
+      <DependentUpon>HostView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="RelayCommand.cs" />
+    <Compile Include="ViewModels\HostViewModel.cs" />
     <Compile Include="ViewModels\IndividualIconViewModel.cs" />
     <Compile Include="ViewModels\StartScreenViewModel.cs" />
     <Compile Include="ViewModels\ScreenControllerViewModel.cs" />
@@ -112,7 +113,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="MainLauncher.xaml">
+    <Page Include="Views\HostView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
