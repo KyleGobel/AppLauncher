@@ -19,8 +19,8 @@
             </i:EventTrigger>
         </i:Interaction.Triggers>
     <Window.Resources>
-        <DataTemplate DataType="{x:Type vm:MainViewModel}">
-            <v:MainView />
+        <DataTemplate DataType="{x:Type vm:StartScreenViewModel}">
+            <v:StartScreenView />
         </DataTemplate>
         <DataTemplate DataType="{x:Type vm:ScreenControllerViewModel}">
             <v:ScreenControllerView />

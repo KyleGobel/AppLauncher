@@ -8,9 +8,9 @@ using GPSLauncher.Annotations;
 
 namespace GPSLauncher.ViewModels
 {
-    public class MainViewModel :INotifyPropertyChanged
+    public class StartScreenViewModel :INotifyPropertyChanged
     {
-        public MainViewModel()
+        public StartScreenViewModel()
         {
             Item1x1 = new IndividualIconViewModel
                 {

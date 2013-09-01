@@ -12,7 +12,7 @@ namespace GPSLauncher.ViewModels
     {
         public ScreenControllerViewModel()
         {
-            CurrentScreen = new MainViewModel();
+            CurrentScreen = new StartScreenViewModel();
             SearchText = "Search";
             ExitApplicationCommand = new RelayCommand(ExitApplication);
             SearchGotFocusCommand = new RelayCommand(SearchGotFocus);
