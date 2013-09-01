@@ -11,5 +11,5 @@ Work in progress, but here's what it currently looks like.
 
 ![AppLauncher](http://img15.imageshack.us/img15/2484/gvd5.png)
 
-Only 4 shortcuts currently on, but each 'page' can hold 16.  The goal is to pin this to your taskbar.  The app will auto exit when it loses focus. (ie. you do anything)
+Only 4 shortcuts currently on, but each 'page' can hold 16.  The idea is to pin this to your taskbar.  The app will auto exit when it loses focus. (ie. you do anything)
 Meant to be able to open and close quickly and easily as needed
