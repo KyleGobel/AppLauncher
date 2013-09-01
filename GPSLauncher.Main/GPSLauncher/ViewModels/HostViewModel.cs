@@ -7,7 +7,7 @@ using GPSLauncher.Annotations;
 
 namespace GPSLauncher.ViewModels
 {
-    public class HostViewModel
+    public class HostViewModel : INotifyPropertyChanged
     {
         public HostViewModel()
         {
