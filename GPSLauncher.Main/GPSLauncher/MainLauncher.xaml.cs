@@ -32,13 +32,12 @@ namespace GPSLauncher
 
         void MainLauncherDeactivated(object sender, EventArgs e)
         {
-         //   System.Windows.Application.Current.Shutdown();
+            System.Windows.Application.Current.Shutdown();
         }
 
         private void OnLostFocus(object sender, RoutedEventArgs routedEventArgs)
         {
-
-         //   System.Windows.Application.Current.Shutdown();
+            System.Windows.Application.Current.Shutdown();
         }
 
         public static int GetTaskbarHeight()
