@@ -26,8 +26,17 @@
 			<RowDefinition Height="6*"/>
 		</Grid.RowDefinitions>
 		<Border BorderThickness="0,0,0,1" BorderBrush="LightGray" Background="White">
-            <my:WebControl Source="http://kylegobel.github.io/AppLauncher/GPSLauncher.Main/GPSLauncher/SearchHeader.html" />
-		</Border>
+            <Grid d:IsLocked="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Height="16" VerticalAlignment="Center" HorizontalAlignment="Center" Source="Icons/search.png" />
+                <Image VerticalAlignment="Center" HorizontalAlignment="Center" Height="16" Source="Icons/menu.png" Grid.Column="2"/>
+                <TextBox Grid.Column="1" Name="SearchBox" TextWrapping="Wrap" Text="Search" KeyUp="SearchBox_OnKeyUp" LostFocus="SearchBox_OnLostFocus" BorderThickness="0" GotFocus="SearchBox_OnGotFocus"  FontFamily="Segoe UI Light" VerticalAlignment="Center" FontWeight="Bold"  FontSize="18"/>
+            </Grid>
+        </Border>
 		<Grid Grid.Row="1">
 		    <ContentControl Content="{Binding}"></ContentControl>
 		</Grid>
