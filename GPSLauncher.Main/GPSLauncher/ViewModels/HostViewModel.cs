@@ -33,7 +33,7 @@ namespace GPSLauncher.ViewModels
 
         private void SearchGotFocus(object o)
         {
-            if (SearchText == "Search")
+            //if (SearchText == "Search")
                 SearchText = "";
         }
 

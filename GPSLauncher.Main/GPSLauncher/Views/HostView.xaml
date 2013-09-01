@@ -42,7 +42,7 @@
                 </Grid.ColumnDefinitions>
                 <Image Height="16" VerticalAlignment="Center" HorizontalAlignment="Center" Source="../Icons/search.png" />
                 <Image VerticalAlignment="Center" HorizontalAlignment="Center" Height="16" Source="../Icons/menu.png" Grid.Column="2"/>
-                <TextBox Grid.Column="1" TextWrapping="Wrap" Text="{Binding SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" FontFamily="Segoe UI Light" VerticalAlignment="Center" FontWeight="Bold"  FontSize="18">
+                <TextBox Grid.Column="1" TextWrapping="Wrap" Text="{Binding SearchText,UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" FontFamily="Segoe UI Light" VerticalAlignment="Center" FontWeight="Bold"  FontSize="18">
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="LostFocus">
                             <i:InvokeCommandAction Command="{Binding SearchLostFocusCommand}" />
