@@ -1,5 +1,8 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
+using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows.Media.Imaging;
 using GPSLauncher.Annotations;
 
 namespace GPSLauncher.ViewModels
@@ -12,24 +15,25 @@ namespace GPSLauncher.ViewModels
                 {
                     Caption = "GitHub",
                     Command = @"C:\Users\Kyle\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\GitHub, Inc\GitHub.appref-ms",
-                    ImageSource = "http://files.softicons.com/download/social-media-icons/glowing-social-network-icons-by-aaron-nichols/png/600/GitHub_Icon.png"
+                    ImageSource = new BitmapImage(new Uri(@"/GPSLauncher;component/Icons/ShortcutIcons/github-icon.png", UriKind.Relative)),
                 };
+      
             Item1x2 = new IndividualIconViewModel
                 {
                     Caption = "VS 2012", 
-                    ImageSource = "http://fc06.deviantart.net/fs70/i/2012/344/9/1/flurry_ios_visual_studio_2012_replacement_icon_by_flakshack-d5nnelp.png",
+                    ImageSource = new BitmapImage(new Uri(@"/GPSLauncher;component/Icons/ShortcutIcons/VS2012.png", UriKind.Relative)),
                     Command = @"C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\devenv.exe"
                 };
             Item1x3 = new IndividualIconViewModel
                 {
                     Caption = "Sublime",
-                    ImageSource = "http://c758482.r82.cf2.rackcdn.com/sublime_text_icon_2181.png",
+                    ImageSource = new BitmapImage(new Uri(@"/GPSLauncher;component/Icons/ShortcutIcons/sublime_text.png", UriKind.Relative)),
                     Command = @"D:\Applications\Sublime Text 2\sublime_text.exe"
                 };
             Item1x4 = new IndividualIconViewModel
                 {
                     Caption = "GMusic",
-                    ImageSource = "http://wcdn4.dataknet.com/static/resources/icons/set31/7e819aff.png",
+                    ImageSource = new BitmapImage(new Uri(@"/GPSLauncher;component/Icons/ShortcutIcons/gmusic.png", UriKind.Relative)),
                     Command = "http://music.google.com/"
                 };
         }

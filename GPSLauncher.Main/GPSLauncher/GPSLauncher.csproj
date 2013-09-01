@@ -38,8 +38,6 @@
     <ApplicationIcon>Rud3boy-Mac-Apps-Launcher.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Awesomium.Core, Version=1.7.1.0, Culture=neutral, PublicKeyToken=e1a0d7c8071a5214, processorArchitecture=x86" />
-    <Reference Include="awesomium.windows.controls, Version=1.7.1.0, Culture=neutral, PublicKeyToken=7a34e179b8b61c39, processorArchitecture=x86" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
@@ -117,10 +115,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Simple Styles.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Views\IndividualIconView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -136,9 +130,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Rud3boy-Mac-Apps-Launcher.ico" />
-    <Content Include="SearchHeader.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Resource Include="Icons\ShortcutIcons\github-icon.png" />
+    <Resource Include="Icons\ShortcutIcons\vs2012.png" />
+    <Resource Include="Icons\ShortcutIcons\sublime_text.png" />
+    <Resource Include="Icons\ShortcutIcons\gmusic.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\menu.png" />

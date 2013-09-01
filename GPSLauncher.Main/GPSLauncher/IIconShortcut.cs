@@ -5,7 +5,7 @@ namespace GPSLauncher
 {
     public interface IIconShortcut
     {
-        string ImageSource { get; set; }
+        object ImageSource { get; set; }
         string Caption { get; set; }
         string Command { get; set; }
     }

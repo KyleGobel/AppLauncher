@@ -1,12 +1,7 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Diagnostics;
-using System.Drawing;
 using System.Runtime.CompilerServices;
-using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using GPSLauncher.Annotations;
 
 namespace GPSLauncher.ViewModels
@@ -17,11 +12,11 @@ namespace GPSLauncher.ViewModels
         {
             LaunchCommand = new RelayCommand(LaunchCommandExecute, CanExecuteLaunchCommand);
         }
-        private string _image;
+        private object _image;
         private string _caption;
         private string _command;
 
-        public string ImageSource
+        public object ImageSource
         {
             get
             {
