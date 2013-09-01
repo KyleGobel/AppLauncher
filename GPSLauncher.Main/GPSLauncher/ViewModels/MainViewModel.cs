@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Drawing;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using System.Windows.Media.Imaging;
 using GPSLauncher.Annotations;
 
@@ -37,6 +38,8 @@ namespace GPSLauncher.ViewModels
                     Command = "http://music.google.com/"
                 };
         }
+
+        #region Items
         private IndividualIconViewModel _item1x1;
         public IndividualIconViewModel Item1x1
         {
@@ -91,6 +94,9 @@ namespace GPSLauncher.ViewModels
                 OnPropertyChanged();
             }
         }
+        #endregion //Items
+
+        #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
@@ -99,5 +105,6 @@ namespace GPSLauncher.ViewModels
             PropertyChangedEventHandler handler = PropertyChanged;
             if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
+        #endregion //INotifyPropertyChanged
     }
 }
