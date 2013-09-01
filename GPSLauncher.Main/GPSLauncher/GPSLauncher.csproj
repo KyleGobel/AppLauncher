@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Rud3boy-Mac-Apps-Launcher.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Awesomium.Core, Version=1.7.1.0, Culture=neutral, PublicKeyToken=e1a0d7c8071a5214, processorArchitecture=x86" />
     <Reference Include="awesomium.windows.controls, Version=1.7.1.0, Culture=neutral, PublicKeyToken=7a34e179b8b61c39, processorArchitecture=x86" />
@@ -132,6 +135,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Rud3boy-Mac-Apps-Launcher.ico" />
     <Content Include="SearchHeader.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
