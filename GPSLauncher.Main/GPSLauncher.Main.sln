@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSLauncher", "GPSLauncher\GPSLauncher.csproj", "{5EF6DF8E-83FC-4332-B248-8CD487F36647}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSLauncher.Facts", "GPSLauncher.Tests\GPSLauncher.Facts.csproj", "{81200E17-9F3F-4928-A8BD-ABCFB7149EDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{5EF6DF8E-83FC-4332-B248-8CD487F36647}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EF6DF8E-83FC-4332-B248-8CD487F36647}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EF6DF8E-83FC-4332-B248-8CD487F36647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81200E17-9F3F-4928-A8BD-ABCFB7149EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81200E17-9F3F-4928-A8BD-ABCFB7149EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81200E17-9F3F-4928-A8BD-ABCFB7149EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81200E17-9F3F-4928-A8BD-ABCFB7149EDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

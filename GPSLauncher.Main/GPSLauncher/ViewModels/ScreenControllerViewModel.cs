@@ -1,9 +1,5 @@
-﻿using System;
-using System.ComponentModel;
-using System.Diagnostics;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Windows;
-using System.Windows.Input;
 using GPSLauncher.Annotations;
 
 namespace GPSLauncher.ViewModels

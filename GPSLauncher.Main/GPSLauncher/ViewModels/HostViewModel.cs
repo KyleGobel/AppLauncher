@@ -20,24 +20,24 @@ namespace GPSLauncher.ViewModels
         }
 
         public object StartScreen { get; set; }
-        private void ExecuteSearch(object obj)
+        public void ExecuteSearch(object obj)
         {
             Process.Start("http://www.google.com/search?q=" + SearchText);
         }
 
-        private void SearchLostFocus(object o)
+        public void SearchLostFocus(object o)
         {
             if (SearchText == "")
                 SearchText = "Search";
         }
 
-        private void SearchGotFocus(object o)
+        public void SearchGotFocus(object o)
         {
             //if (SearchText == "Search")
                 SearchText = "";
         }
 
-        private void ExitApplication(object obj)
+        public void ExitApplication(object obj)
         {
             #if !DEBUG
                 Application.Current.Shutdown();
